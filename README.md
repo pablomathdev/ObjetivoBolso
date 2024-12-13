@@ -18,7 +18,7 @@
 ![Screenshot_20241002-110405](https://github.com/user-attachments/assets/8d6cb431-c7f5-4d6f-a1a6-eb5f9b6804e4)
 ![Screenshot_20241002-110313](https://github.com/user-attachments/assets/d8e16b9c-6d1e-411b-9462-8f6acb840706)
 
-## Link Download APK 
+## ⬇ Link Download APK 
 https://drive.google.com/file/d/11GOo5Ol61RpG6Pqh2pbRc9fOahzIl2yh/view
 
 ## Autor
