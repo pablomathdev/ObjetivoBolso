@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_margin="20dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_image"
+    >
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/goal_image"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/car_img"
+        app:layout_constraintDimensionRatio="1:1"
+        app:shapeAppearanceOverlay="@style/rounded">
+        
+    </com.google.android.material.imageview.ShapeableImageView>
+
+    <ImageView
+        android:id="@+id/selected_border"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        />
+
+
+
+
+</FrameLayout>

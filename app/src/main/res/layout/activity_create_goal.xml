@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/create_goal_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CreateGoalActivity"
+    android:background="@color/Very_light_gray"
+    >
+
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar">
+    </include>
+
+    <ImageView
+        android:id="@+id/goal_img_1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"></ImageView>
+
+      <LinearLayout
+          android:id="@+id/container_form_create_goal"
+          app:layout_constraintTop_toBottomOf="@+id/goal_img_1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          >
+
+          <TextView
+              android:id="@+id/goal_title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textStyle="bold"
+              android:textColor="@color/black"
+              android:textSize="20sp"
+              android:layout_marginTop="10dp"
+              android:text="">
+
+          </TextView>
+
+          <TextView
+              android:id="@+id/label1"
+              android:layout_marginTop="10dp"
+              android:layout_marginBottom="5dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/how_much_do_you_want_to_save"
+              android:textSize="15dp"
+              android:textStyle="bold"
+              android:textColor="@color/black">
+
+          </TextView>
+          <EditText
+              android:id="@+id/want_to_save_field"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/border_edit_text_form"
+              android:padding="12dp"
+              android:text="R$ 0,00"
+              android:inputType="number"
+              android:textSize="15dp"
+              >
+
+          </EditText>
+
+          <include layout="@layout/text_view_error"
+               android:id="@+id/text_view_error_1"
+              ></include>
+
+          <TextView
+              android:id="@+id/label2"
+              android:layout_marginTop="10dp"
+              android:layout_marginBottom="5dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/how_much_do_you_already_have"
+              android:textSize="15dp"
+              android:textStyle="bold"
+              android:textColor="@color/black">
+
+          </TextView>
+          <EditText
+              android:id="@+id/already_have_field"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/border_edit_text_form"
+              android:padding="12dp"
+              android:inputType="number"
+              android:text="R$ 0,00"
+              android:textSize="15dp"
+              >
+
+          </EditText>
+
+          <include layout="@layout/text_view_error"
+              android:id="@+id/text_view_error_2"/>
+
+
+
+      </LinearLayout>
+
+
+    <include layout="@layout/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

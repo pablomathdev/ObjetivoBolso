@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container_goal_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/border"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="20dp"
+    >
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_goal_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/goal_image"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:id="@+id/container_txt_goal_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/card_goal_image"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/goal_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carro"
+            android:textColor="@color/black"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_goal_saved_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="R$ 50,00">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/saving"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/savings_icon"
+        android:background="@android:color/transparent"
+        >
+
+    </ImageButton>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.App" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/very_dark_grayish_blue</item>
+        <item name="colorPrimaryVariant">@color/very_dark_grayish_blue</item>
+        <item name="colorOnPrimary">@color/very_dark_grayish_blue</item>
+
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button</item>
+
+
+    </style>
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/pure_orange</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="ButtonSavingsAddValues">
+
+        <item name="android:background">@drawable/border</item>
+        <item name="android:backgroundTint">@color/green</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+
+    </style>
+
+    <style name="ButtonSavingsDecreaseValues">
+
+        <item name="android:background">@drawable/border</item>
+        <item name="android:backgroundTint">@color/light_red</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+
+    </style>
+
+</resources>
